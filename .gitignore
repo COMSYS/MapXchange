@@ -1,0 +1,17 @@
+*.bin
+*.csv
+*.db
+*-journal
+*.lock
+*.log
+*.out
+*.pdf
+*.pyc
+*.tmp
+*.txt
+!requirements.txt
+!real_world_record.txt
+!paillier.csv
+!provision*.csv
+!regular*.csv
+!reverse*.csv

@@ -1,0 +1,10 @@
+Flask-SQLAlchemy~=3.0
+flask-httpauth~=4.0
+matplotlib~=3.0
+memory_profiler~=0.61
+phe~=1.5
+requests~=2.26
+responses~=0.22
+scipy~=1.13
+tcconfig~=0.23
+tqdm~=4.60

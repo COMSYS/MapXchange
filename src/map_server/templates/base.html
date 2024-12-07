@@ -1,0 +1,22 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Map Server</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<nav>
+    <h1>Map Server</h1>
+    <ul>
+        <li style="border-right: 1px solid #bbb;"><a href="/">Main</a></li>
+        <li><span>Producer:</span></li>
+        <li><a href="/producer/gen_token">Gen. Token</a></li>
+    </ul>
+</nav>
+<hr />
+<section class="content">
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+</section>
